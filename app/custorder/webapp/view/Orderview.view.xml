@@ -2,5 +2,33 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+
+        <Breadcrumbs id="_IDGenBreadcrumbs" >
+            <Link id="_IDGenLink" text="Master"></Link>
+        </Breadcrumbs>
+
+        <HBox id="_IDGenHBox" >
+            <VBox id="_IDGenVBox" >
+                 <Label id="_IDGenLabel1" text="OrderID"></Label>
+                 <Input id="_IDGenInput" placeholder="enter OrderID"></Input>
+            </VBox>
+            <VBox id="_IDGenVBox1" >
+                 <Label id="_IDGenLabel2" text="CustomerID"></Label>
+                 <Input id="_IDGenInput1" placeholder="enter CustomerID"></Input>
+            </VBox>
+            <VBox id="_IDGenVBox2" >
+                 <Label id="_IDGenLabel3" text="EmployeeID"></Label>
+                 <Input id="_IDGenInput2" placeholder="enter EmployeeID"></Input>
+            </VBox>
+            <VBox id="_IDGenVBox3" >
+                 <Label id="_IDGenLabel4" text="ShipName"></Label>
+                 <Input id="_IDGenInput3" placeholder="enter ShipName"></Input>
+            </VBox>
+        </HBox>
+        <HBox id="_IDGenHBox1" >
+            <VBox id="_IDGenVBox5" >
+            <Button id="_IDGenButton" press="submit" text="Submit" type="Default"></Button>
+            </VBox>
+        </HBox>
     </Page>
 </mvc:View>
