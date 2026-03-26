@@ -22,7 +22,8 @@
     "watch-orders": "cds watch --open orders/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy Myfirsthanaorderapp --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-custorder": "cds watch --open custorder/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {

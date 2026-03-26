@@ -65,9 +65,23 @@ modules:
       - orders.zip
       name: orders
       target-path: resources/
+    - artifacts:
+      - custorder.zip
+      name: custorder
+      target-path: resources/
 - name: orders
   type: html5
   path: app/orders
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: custorder
+  type: html5
+  path: app/custorder
   build-parameters:
     build-result: dist
     builder: custom
