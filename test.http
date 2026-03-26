@@ -1,0 +1,8 @@
+### getOrderData
+GET  http://localhost:4004/orderservice/Orders
+
+### getOrder_DetailData
+GET  http://localhost:4004/orderservice/Order_Detail
+
+### getOrder_DetailData
+GET  http://localhost:4004/orderservice/Order_Detail
