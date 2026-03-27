@@ -148,6 +148,45 @@ sap.ui.define([
                 resetbusy();
                 MessageBox.error("Update failed");
             })
+        },
+        OnDownloadPress: function () {
+            const {jsPDF} = window.jspdf;
+            var doc = new jsPDF('p','pt','a4');
+
+            doc.setFontSize(14);
+            doc.text("Order Report",40,40);
+            var order= this._oSelectedContext.getObject();
+            //add table
+            var head = [['OrderID','CustomerID','EmployeeID','ShipName']];
+            var body = [
+                [order.OrderID,order.CustomerID,order.EmployeeID,order.ShipName]
+            ]
+            doc.autoTable({
+                head:head,
+                body:body,
+                startY:60
+            });
+
+            doc.text("All Order",40,doc.lastAutoTable.finalY + 20);         
+
+            var oModel = this.getView().getModel();
+            var oBindings= oModel.bindList("/Orders");
+            oBindings.requestContexts().then(function (aContexts) {
+                var aOrders=[];
+                aContexts.forEach(function (oContext) {
+                    var order = oContext.getObject();
+                    aOrders.push([
+                        order.OrderID,order.CustomerID,order.EmployeeID,order.ShipName
+                    ]);
+                });
+                doc.autoTable({
+                    head:head,
+                    body:aOrders,
+                    startY:doc.lastAutoTable.finalY + 30
+                });
+                doc.save("Order_Report.pdf");
+            });
+            
         }
     });
 });
