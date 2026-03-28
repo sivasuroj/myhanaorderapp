@@ -1,14 +1,13 @@
-# CAP sflight
+# CAP CAP_01
 _out
 *.db
+*.sqlite
 connection.properties
 default-*.json
-schema.sql
+.cdsrc-private.json
 gen/
 node_modules/
 target/
-.reloadtrigger
-package-lock.json
 
 # Web IDE, App Studio
 .che/
@@ -18,37 +17,18 @@ package-lock.json
 *_mta_build_tmp
 *.mtar
 mta_archives/
-/Makefile_*.mta
 
 # Other
 .DS_Store
-.npmrc
 *.orig
 *.log
 
+*.iml
 *.flattened-pom.xml
 
-srv/src/main/resources/edmx/**
-dist/
-/app/resources/
-/app/router/package-lock.json
-
-
 # IDEs
-.idea
-*.iml
-.project
-.settings
-.classpath
-# .vscode/*
-# IMPORTANT: Do not exclude .vscode please!
+# .vscode
+# .idea
 
-# Local dev
-.env
-.values.yaml
-.cdsrc-private.json
-
-# Exclude Helm chart for this example
-/chart
-# auto generated wildcard
-db/.env
+# @cap-js/cds-typer
+@cds-models
