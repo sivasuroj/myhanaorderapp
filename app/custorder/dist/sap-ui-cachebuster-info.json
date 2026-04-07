@@ -1,0 +1,23 @@
+{
+  "Component.js": 1774532316945,
+  "i18n/i18n.properties": 1774532317005,
+  "controller/Orderview.controller.js": 1774689756113,
+  "controller/App.controller.js": 1774532317041,
+  "manifest.json": 1774532316985,
+  "model/models.js": 1774532317025,
+  "model/models-dbg.js": 1774532317025,
+  "model/models.js.map": 1775552222784,
+  "controller/Orderview-dbg.controller.js": 1774689756113,
+  "controller/Orderview.controller.js.map": 1775552222793,
+  "controller/App-dbg.controller.js": 1774532317041,
+  "controller/App.controller.js.map": 1775552222786,
+  "Component-dbg.js": 1774532316945,
+  "Component.js.map": 1775552222774,
+  "Component-preload.js": 1775552222894,
+  "Component-preload.js.map": 1775552222894,
+  "view/Orderview.view.xml": 1774689700809,
+  "view/App.view.xml": 1774532317053,
+  "view/Actionsheet.fragment.xml": 1774615352223,
+  "css/style.css": 1774532317049,
+  "index.html": 1774623369461
+}
